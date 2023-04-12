@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
+
 	WebDriver driver = null;
 
 	public LoginPage(WebDriver driver) {
@@ -15,25 +16,25 @@ public class LoginPage {
 
 	}
 
-	@FindBy(id = "username")
-	private WebElement userName;
-
-	public WebElement getUserName() {
-		return userName;
+	public WebElement getEmailAddress() {
+		return EmailAddress;
 	}
 
-	@FindBy(id = "password")
-	private WebElement Password;
-
-	public WebElement getPassword() {
-		return Password;
+	public WebElement getLoginPassword() {
+		return LoginPassword;
 	}
 
-	@FindBy(id = "login")
-	private WebElement Login;
-
-	public WebElement getLogin() {
-		return Login;
+	public WebElement getLoginButton() {
+		return LoginButton;
 	}
+
+	@FindBy(name = "loginEmail")
+	private WebElement EmailAddress;
+
+	@FindBy(name = "loginPassword")
+	private WebElement LoginPassword;
+
+	@FindBy(xpath = "//button[contains(text(),'Login')]")
+	private WebElement LoginButton;
 
 }
