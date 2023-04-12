@@ -42,6 +42,10 @@ public class ConfigExcelFileReader {
 	}
 	// returns the row count in a sheet
 
+	public ConfigExcelFileReader() {
+	
+	}
+
 	public int getRowCount(String sheetName) {
 		int index = workbook.getSheetIndex(sheetName);
 		if (index == -1)

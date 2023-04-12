@@ -63,6 +63,13 @@ public class ConfigFileReader {
 	}
 
 	
+	public String getSheetName(String GetsheetName) {
+		String sheetName =  properties.getProperty(GetsheetName);
+		
+		return sheetName;
+	}
+
+
 	
 	
 	

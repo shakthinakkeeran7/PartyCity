@@ -28,7 +28,7 @@ import io.cucumber.testng.TestNGCucumberRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 @CucumberOptions(features = "src/test/resources/feature/account-login.feature", glue = {
-		"com.partycity.stepDefinition" }, dryRun = true,  monochrome = true)
+		"com.partycity.stepDefinition" }, dryRun = false,  monochrome = true)
 
 public class TestRunner extends AbstractTestNGCucumberTests {
 	// Parallel Execution Scenario
@@ -44,7 +44,8 @@ public class TestRunner extends AbstractTestNGCucumberTests {
 	public void setUp() throws Throwable {
 
 		String browser = FileReaderManager.getInstance().getCrInstance().getBrowser();
-		driver = BaseClass.getBrowser(browser);
+		//driver = BaseClass.getBrowser(browser);
+		
 
 	}
 

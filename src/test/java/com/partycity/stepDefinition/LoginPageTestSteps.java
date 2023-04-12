@@ -1,8 +1,13 @@
 package com.partycity.stepDefinition;
 
+import java.util.HashMap;
+
+import org.bouncycastle.jcajce.provider.asymmetric.dsa.DSASigner.stdDSA;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.SendKeysAction;
 
 import com.partycity.baseclass.BaseClass;
+import com.partycity.dataprovider.ConfigExcelFileReader;
 import com.partycity.enums.Context;
 import com.partycity.manager.FileReaderManager;
 import com.partycity.manager.PageObjectManager;
@@ -10,27 +15,40 @@ import com.partycity.pageobjects.LoginPage;
 import com.partycity.runner.TestRunner;
 import com.partycity.util.TestContext;
 
+
 import io.cucumber.java.en.*;
 
 public class LoginPageTestSteps extends BaseClass {
-
+	public static ConfigExcelFileReader reader = null;
+	
 	TestContext testContext;
 	LoginPage loginPage;
+	
 
-	public LoginPageTestSteps(TestContext context) {
+	public LoginPageTestSteps(TestContext context) throws Throwable {
 
 		testContext = context;
 		loginPage = testContext.getPageObjectManager().getLoginpage();
+		
+		
 	}
+	
 
 	@Given("I am on the login page")
 	public void i_am_on_the_login_page() {
-
-	}
+		}
 
 	@When("I enter my valid username and password")
-	public void i_enter_my_valid_username_and_password() {
-
+	public void i_enter_my_valid_username_and_password() throws Throwable   {
+		String sheetName = FileReaderManager.getInstance().getCrInstance().getSheetName("LoginPageTestData");
+		String testName = "SuccessfulLoginWithValidUsernameAndPassword";
+		HashMap<String, String> testData = new HashMap<String, String>();
+		testData = reader.getRowTestData(sheetName, testName);
+		System.out.println("----------"+testData.get("EmailID")+testData.get("Password")+"--------------");
+		
+		String LoginUrl = FileReaderManager.getInstance().getCrInstance().getApplicationUrl()+"/account-login";
+	
+	driver.get(LoginUrl);		
 	}
 
 	@When("I click the login button")
