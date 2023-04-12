@@ -22,15 +22,7 @@ public class BaseClass {
 
 		ChromeOptions option = new ChromeOptions();
 
-		option.addArguments("--ignore-certificate-errors");
-		option.addArguments("chrome.switches", "--disable-extensions");
-		option.addArguments("--disable-notifications");
-		option.addArguments("enable-automation");
-		option.addArguments("start-maximized");
-
-		DesiredCapabilities cap = new DesiredCapabilities();
-		cap.setCapability(ChromeOptions.CAPABILITY, option);
-		option.merge(cap);
+		
 
 		try {
 
