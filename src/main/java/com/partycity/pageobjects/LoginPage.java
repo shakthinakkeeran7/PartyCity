@@ -28,6 +28,10 @@ public class LoginPage {
 		return LoginButton;
 	}
 
+	public WebElement getLoginFailedMessage() {
+		return loginFailedMessage;
+	}
+
 	@FindBy(name = "loginEmail")
 	private WebElement EmailAddress;
 
@@ -36,5 +40,12 @@ public class LoginPage {
 
 	@FindBy(xpath = "//button[contains(text(),'Login')]")
 	private WebElement LoginButton;
+	
+	
+	@FindBy(xpath = "//span[@class='pc-fieldset__error']")
+	private WebElement loginFailedMessage;
+	
+	
+	
 
 }

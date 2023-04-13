@@ -21,8 +21,15 @@ public class BaseClass {
 	public static WebDriver getBrowser(String browserName) {
 
 		ChromeOptions option = new ChromeOptions();
+		option.addArguments("start-maximized");
+		option.addArguments("--ignore-certificate-errors");
+		option.addArguments("chrome.switches", "--disable-extensions");
+		option.addArguments("--disable-notifications");
+		option.addArguments("enable-automation");
 
-		
+		DesiredCapabilities cap = new DesiredCapabilities();
+		cap.setCapability(ChromeOptions.CAPABILITY, option);
+		option.merge(cap);
 
 		try {
 
@@ -32,12 +39,14 @@ public class BaseClass {
 				WebDriverManager.chromedriver().setup();
 
 				driver = new ChromeDriver();
+
 			} else {
 				throw new Exception("Browser Name is invalid");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 
@@ -51,6 +60,14 @@ public class BaseClass {
 
 			e.printStackTrace();
 		}
+	}
+
+	public static String currentUrl() {
+
+		String Url = driver.getCurrentUrl();
+
+		return Url;
+
 	}
 
 	public static void selectDropDownOption(WebElement element, String option, String value) {
@@ -118,6 +135,12 @@ public class BaseClass {
 		}
 	}
 
+	public static void launchUrl(String urlName) {
+
+		driver.get(urlName);
+
+	}
+
 	public static void clearonWebelement(WebElement element) {
 		try {
 			waitforElementVisiblity(element);
@@ -136,11 +159,9 @@ public class BaseClass {
 	}
 
 	public static String getAttribute(WebElement element, String AttributeName) {
-		
 
-			String attributeValue = element.getAttribute(AttributeName);
-			return attributeValue;	
-			
-	
+		String attributeValue = element.getAttribute(AttributeName);
+		return attributeValue;
+
 	}
 }

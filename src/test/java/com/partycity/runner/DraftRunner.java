@@ -30,17 +30,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 @CucumberOptions(
 		features = "src/test/resources/feature",
 		glue = {"com.partycity.stepDefinition"},
-		dryRun = false,
+		dryRun = true,
 		monochrome = true)
 
-public class TestRunner extends AbstractTestNGCucumberTests {
+public class DraftRunner extends AbstractTestNGCucumberTests {
 	public static WebDriver driver;
 
 	@BeforeSuite(alwaysRun = true)
 	public void setUp() throws Throwable {
 
-		String browser = FileReaderManager.getInstance().getCrInstance().getBrowser();
-		driver = BaseClass.getBrowser(browser);
+		//String browser = FileReaderManager.getInstance().getCrInstance().getBrowser();
+		//driver = BaseClass.getBrowser(browser);
 		
 
 	}

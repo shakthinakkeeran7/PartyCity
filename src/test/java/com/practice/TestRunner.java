@@ -1,4 +1,4 @@
-package com.partycity.runner;
+package com.practice;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,22 +27,10 @@ import io.cucumber.testng.PickleWrapper;
 import io.cucumber.testng.TestNGCucumberRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-@CucumberOptions(
-		features = "src/test/resources/feature",
-		glue = {"com.partycity.stepDefinition"},
-		dryRun = false,
-		monochrome = true)
+@CucumberOptions(features = "C:\\Users\\shakthi\\git\\PartyCity\\src\\test\\java\\com\\practice\\test.feature", glue = {
+		"com.practice" }, dryRun = false,  monochrome = true)
 
 public class TestRunner extends AbstractTestNGCucumberTests {
-	public static WebDriver driver;
-
-	@BeforeSuite(alwaysRun = true)
-	public void setUp() throws Throwable {
-
-		String browser = FileReaderManager.getInstance().getCrInstance().getBrowser();
-		driver = BaseClass.getBrowser(browser);
-		
-
-	}
+	
 
 }

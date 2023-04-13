@@ -8,10 +8,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.WebDriver;
+
 public class ConfigFileReader {
 
 	private Properties properties;
-	private final String propertyFilePath = "src/test/resources/properties/config.properties";
+	private final String propertyFilePath = "src/test/resources/configuration.properties";
 
 	public ConfigFileReader() {
 		BufferedReader reader;
@@ -51,6 +53,13 @@ public class ConfigFileReader {
 		String browserName = properties.getProperty("browserName");
 
 		return browserName;
+	}
+	public WebDriver getDriver() {
+
+		String browserName = properties.getProperty("browserName");
+		return null;
+
+	
 	}
 
 	public void getEnvironment() {

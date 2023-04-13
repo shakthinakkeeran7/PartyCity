@@ -1,63 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-12T17:27:37 IST" name="Default suite" finished-at="2023-04-12T17:27:40 IST" duration-ms="3199">
+  <suite started-at="2023-04-13T12:17:39 IST" name="Default suite" finished-at="2023-04-13T12:18:38 IST" duration-ms="59766">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-04-12T17:27:37 IST" name="Default test" finished-at="2023-04-12T17:27:40 IST" duration-ms="3199">
+    <test started-at="2023-04-13T12:17:39 IST" name="Default test" finished-at="2023-04-13T12:18:38 IST" duration-ms="59766">
       <class name="com.partycity.runner.TestRunner">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:29 IST" name="setUp" finished-at="2023-04-12T17:27:37 IST" duration-ms="7614" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:17:34 IST" name="setUp" finished-at="2023-04-13T12:17:39 IST" duration-ms="4169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:37 IST" name="setUpClass" finished-at="2023-04-12T17:27:39 IST" duration-ms="1497" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:17:39 IST" name="setUpClass" finished-at="2023-04-13T12:17:39 IST" duration-ms="613" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@99a78d7]]>
+                <![CDATA[org.testng.TestRunner@5f038248]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T17:27:40 IST" duration-ms="932" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Failed login with invalid email and password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T17:27:40 IST" duration-ms="895" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Failed login with invalid username and password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T17:27:40 IST" duration-ms="900" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:17:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-13T12:17:53 IST" duration-ms="14084" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -70,41 +38,31 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T17:27:40 IST" duration-ms="1277" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Successful login with valid username and password"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Cannot invoke "com.partycity.dataprovider.ConfigExcelFileReader.getRowTestData(String, String)" because "com.partycity.stepDefinition.LoginPageTestSteps.reader" is null]]>
+              <![CDATA[expected [https://www.partycity.com/account?registration=false] but found [https://www.partycity.com/account-login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.partycity.dataprovider.ConfigExcelFileReader.getRowTestData(String, String)" because "com.partycity.stepDefinition.LoginPageTestSteps.reader" is null
-at com.partycity.stepDefinition.LoginPageTestSteps.i_enter_my_valid_username_and_password(LoginPageTestSteps.java:46)
-at ✽.I enter my valid username and password(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:9)
+              <![CDATA[java.lang.AssertionError: expected [https://www.partycity.com/account?registration=false] but found [https://www.partycity.com/account-login]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.partycity.stepDefinition.LoginPageTestSteps.i_should_be_redirected_to_the_account_page(LoginPageTestSteps.java:65)
+at ✽.I should be redirected to the account page "https://www.partycity.com/account?registration=false"(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:15)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T17:27:40 IST" duration-ms="858" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:17:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-13T12:18:31 IST" duration-ms="37268" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Failed login with empty password field"]]>
+                <![CDATA["Successful Logout"]]>
               </value>
             </param>
             <param index="1">
@@ -113,14 +71,31 @@ at ✽.I enter my valid username and password(file:///C:/Users/shakthi/git/Party
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.partycity.com] but found [https://www.partycity.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.partycity.com] but found [https://www.partycity.com/]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.partycity.stepDefinition.AccountPageTestSteps.i_should_be_logged_out_and_redirected_to_the_home_page(AccountPageTestSteps.java:42)
+at ✽.I should be logged out and redirected to the "https://www.partycity.com" Home page(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:19)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T17:27:40 IST" duration-ms="910" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:18:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-13T12:18:38 IST" duration-ms="7676" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Failed login with whitespace characters in the username or email field"]]>
+                <![CDATA["Failed login with invalid email and password"]]>
               </value>
             </param>
             <param index="1">
@@ -129,42 +104,27 @@ at ✽.I enter my valid username and password(file:///C:/Users/shakthi/git/Party
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [We're sorry, there is an error with your email and/or password. Please try again] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [We're sorry, there is an error with your email and/or password. Please try again] but found []
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.partycity.stepDefinition.LoginPageTestSteps.i_should_see_an_error_message_indicating_the_login_failed(LoginPageTestSteps.java:45)
+at ✽.I should see an error message indicating the login failed "We're sorry, there is an error with your email and/or password. Please try again"(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:26)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T17:27:40 IST" duration-ms="855" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Failed login with empty username or email field"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-12T17:27:40 IST" duration-ms="860" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Failed login with whitespace characters in the password field"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Login Functionality"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-12T17:27:40 IST" name="tearDownClass" finished-at="2023-04-12T17:27:40 IST" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:18:38 IST" name="tearDownClass" finished-at="2023-04-13T12:18:38 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
