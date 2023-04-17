@@ -13,6 +13,7 @@ Feature: Login Functionality
     When I enter my valid "5858mgnn@justdefinition.com" and "Shakthi#123"
     And I click the login button
     Then I should be redirected to the account page "https://www.partycity.com/account?registration=false"
+	
 	Scenario: Successful Logout
     Given I am logged in to the account page
     When I click on the Sign Out button

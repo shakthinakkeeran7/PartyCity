@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-13T12:17:39 IST" name="Default suite" finished-at="2023-04-13T12:18:38 IST" duration-ms="59766">
+  <suite started-at="2023-04-17T12:49:35 IST" name="Default suite" finished-at="2023-04-17T12:49:37 IST" duration-ms="1916">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-04-13T12:17:39 IST" name="Default test" finished-at="2023-04-13T12:18:38 IST" duration-ms="59766">
+    <test started-at="2023-04-17T12:49:35 IST" name="Default test" finished-at="2023-04-17T12:49:37 IST" duration-ms="1916">
       <class name="com.partycity.runner.TestRunner">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:17:34 IST" name="setUp" finished-at="2023-04-13T12:17:39 IST" duration-ms="4169" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-17T12:49:29 IST" name="setUp" finished-at="2023-04-17T12:49:35 IST" duration-ms="5948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:17:39 IST" name="setUpClass" finished-at="2023-04-13T12:17:39 IST" duration-ms="613" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-17T12:49:35 IST" name="setUpClass" finished-at="2023-04-17T12:49:36 IST" duration-ms="803" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5f038248]]>
+                <![CDATA[org.testng.TestRunner@4315e9af]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:17:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-13T12:17:53 IST" duration-ms="14084" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-17T12:49:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-17T12:49:37 IST" duration-ms="801" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,27 +38,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://www.partycity.com/account?registration=false] but found [https://www.partycity.com/account-login]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://www.partycity.com/account?registration=false] but found [https://www.partycity.com/account-login]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.partycity.stepDefinition.LoginPageTestSteps.i_should_be_redirected_to_the_account_page(LoginPageTestSteps.java:65)
-at ✽.I should be redirected to the account page "https://www.partycity.com/account?registration=false"(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:17:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-13T12:18:31 IST" duration-ms="37268" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-17T12:49:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-17T12:49:37 IST" duration-ms="36" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,27 +54,10 @@ at ✽.I should be redirected to the account page "https://www.partycity.com/acc
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://www.partycity.com] but found [https://www.partycity.com/]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://www.partycity.com] but found [https://www.partycity.com/]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.partycity.stepDefinition.AccountPageTestSteps.i_should_be_logged_out_and_redirected_to_the_home_page(AccountPageTestSteps.java:42)
-at ✽.I should be logged out and redirected to the "https://www.partycity.com" Home page(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:19)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:18:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-13T12:18:38 IST" duration-ms="7676" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-17T12:49:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-04-17T12:49:37 IST" duration-ms="45" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,27 +70,10 @@ at ✽.I should be logged out and redirected to the "https://www.partycity.com" 
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [We're sorry, there is an error with your email and/or password. Please try again] but found []]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [We're sorry, there is an error with your email and/or password. Please try again] but found []
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.partycity.stepDefinition.LoginPageTestSteps.i_should_see_an_error_message_indicating_the_login_failed(LoginPageTestSteps.java:45)
-at ✽.I should see an error message indicating the login failed "We're sorry, there is an error with your email and/or password. Please try again"(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:26)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-13T12:18:38 IST" name="tearDownClass" finished-at="2023-04-13T12:18:38 IST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.partycity.runner.TestRunner@55183b20]" started-at="2023-04-17T12:49:37 IST" name="tearDownClass" finished-at="2023-04-17T12:49:37 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

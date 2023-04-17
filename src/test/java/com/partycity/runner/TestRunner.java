@@ -30,7 +30,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 @CucumberOptions(
 		features = "src/test/resources/feature",
 		glue = {"com.partycity.stepDefinition"},
-		dryRun = false,
+		dryRun = true,
 		monochrome = true)
 
 public class TestRunner extends AbstractTestNGCucumberTests {

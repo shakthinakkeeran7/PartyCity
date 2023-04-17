@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 13 12:17:39 IST 2023</td>
+<td>Started on:</td><td>Mon Apr 17 12:49:35 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>59 seconds (59766 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1916 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,84 +67,27 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.partycity.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.partycity.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Failed login with invalid email and password", "Login Functionality"</td>
+<td></td>
+<td>0</td>
+<td>com.partycity.runner.TestRunner@55183b20</td></tr>
+<tr>
 <td title='com.partycity.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.partycity.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login with valid email and password", "Login Functionality"</td>
-<td><div><pre>java.lang.AssertionError: expected [https://www.partycity.com/account?registration=false] but found [https://www.partycity.com/account-login]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.partycity.stepDefinition.LoginPageTestSteps.i_should_be_redirected_to_the_account_page(LoginPageTestSteps.java:65)
-	at ✽.I should be redirected to the account page &quot;https://www.partycity.com/account?registration=false&quot;(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace165850513", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace165850513'><pre>java.lang.AssertionError: expected [https://www.partycity.com/account?registration=false] but found [https://www.partycity.com/account-login]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.partycity.stepDefinition.LoginPageTestSteps.i_should_be_redirected_to_the_account_page(LoginPageTestSteps.java:65)
-	at ✽.I should be redirected to the account page &quot;https://www.partycity.com/account?registration=false&quot;(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:15)
-</pre></div></td>
-<td>14</td>
+<td></td>
+<td>0</td>
 <td>com.partycity.runner.TestRunner@55183b20</td></tr>
 <tr>
 <td title='com.partycity.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.partycity.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful Logout", "Login Functionality"</td>
-<td><div><pre>java.lang.AssertionError: expected [https://www.partycity.com] but found [https://www.partycity.com/]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.partycity.stepDefinition.AccountPageTestSteps.i_should_be_logged_out_and_redirected_to_the_home_page(AccountPageTestSteps.java:42)
-	at ✽.I should be logged out and redirected to the &quot;https://www.partycity.com&quot; Home page(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace337813415", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace337813415'><pre>java.lang.AssertionError: expected [https://www.partycity.com] but found [https://www.partycity.com/]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.partycity.stepDefinition.AccountPageTestSteps.i_should_be_logged_out_and_redirected_to_the_home_page(AccountPageTestSteps.java:42)
-	at ✽.I should be logged out and redirected to the &quot;https://www.partycity.com&quot; Home page(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:19)
-</pre></div></td>
-<td>37</td>
-<td>com.partycity.runner.TestRunner@55183b20</td></tr>
-<tr>
-<td title='com.partycity.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.partycity.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Failed login with invalid email and password", "Login Functionality"</td>
-<td><div><pre>java.lang.AssertionError: expected [We&apos;re sorry, there is an error with your email and/or password. Please try again] but found []
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.partycity.stepDefinition.LoginPageTestSteps.i_should_see_an_error_message_indicating_the_login_failed(LoginPageTestSteps.java:45)
-	at ✽.I should see an error message indicating the login failed &quot;We&apos;re sorry, there is an error with your email and/or password. Please try again&quot;(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:26)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1207953777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1207953777'><pre>java.lang.AssertionError: expected [We&apos;re sorry, there is an error with your email and/or password. Please try again] but found []
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at com.partycity.stepDefinition.LoginPageTestSteps.i_should_see_an_error_message_indicating_the_login_failed(LoginPageTestSteps.java:45)
-	at ✽.I should see an error message indicating the login failed &quot;We&apos;re sorry, there is an error with your email and/or password. Please try again&quot;(file:///C:/Users/shakthi/git/PartyCity/src/test/resources/feature/account-login.feature:26)
-</pre></div></td>
-<td>7</td>
+<td></td>
+<td>0</td>
 <td>com.partycity.runner.TestRunner@55183b20</td></tr>
 </table><p>
 </body>

@@ -24,6 +24,7 @@ public class AccountPageTestSteps extends BaseClass {
 
 	}
 
+
 	@Given("I am logged in to the account page")
 	public void i_am_logged_in_to_the_account_page() throws Throwable {
 
@@ -42,4 +43,47 @@ public class AccountPageTestSteps extends BaseClass {
 		Assert.assertEquals(currentUrl(), url);
 
 	}
+
+	@Given("I enter my first name as {string}")
+	public void i_enter_my_first_name_as(String string) {
+
+		
+		
+	}
+
+	@Given("I enter my last name as {string}")
+	public void i_enter_my_last_name_as(String string) {
+
+	}
+
+	@Given("I enter my email address as {string}")
+	public void i_enter_my_email_address_as(String string) {
+
+	}
+
+	@Given("I enter my password as {string}")
+	public void i_enter_my_password_as(String string) {
+
+	}
+
+	@Given("I enter Confoirm password as {string}")
+	public void i_enter_confoirm_password_as(String string) {
+
+	}
+
+	@Given("I select the Send me email checkbox for notification")
+	public void i_select_the_send_me_email_checkbox_for_notification() {
+
+	}
+
+	@Given("I click on the Create Account button")
+	public void i_click_on_the_create_account_button() {
+
+	}
+
+	@Then("I should see a success message {string}")
+	public void i_should_see_a_success_message(String string) {
+
+	}
+
 }
